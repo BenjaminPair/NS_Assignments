@@ -1,0 +1,96 @@
+1. Create a query that shows ALL the results from the Customers table. 
+SELECT * 
+FROM Customers
+2. Create a query that shows all the records only for the [CustomerID] field(s) in the table Customers. 
+SELECT customerid 
+FROM Customers
+3. Create a query that shows all the records only for the [CustomerID,CustomerName] field(s) in the table Customers. 
+SELECT customerid,customername 
+FROM Customers
+4. Create a query that shows all the records only for the [ContactName,Address,City] field(s) in the table Customers. 
+SELECT contactname,address,city 
+FROM Customers
+5. Create a query that shows all the records only for the [Country] field(s) in the table Customers. 
+SELECT country 
+FROM Customers
+6. Create a query that shows all the records only for the [CustomerID,CustomerName,Country] field(s) in the table Customers. 
+SELECT CustomerID,CustomerName,Country 
+FROM Customers
+7. Create a query that shows all the records only for the [OrderID] field(s) in the table Customers. 
+SELECT orderid 
+FROM [Orders]
+8. Create a query that shows all the records only for the [CustomerID] field(s) in the table 
+Orders. 
+SELECT customerid 
+FROM [Orders]
+9. Create a query that shows all the records only for the [CustomerID,EmployeeID,OrderDate] field(s) in the table Orders. 
+SELECT CustomerID,EmployeeID,OrderDate 
+FROM [Orders]
+10. Create a query that shows all the records only for the [ShipperID,OrderID] field(s) in the table Orders. 
+SELECT ShipperID,OrderID 
+FROM [Orders]
+11. Create a query that shows all the records only for the [OrderDate,Country] :) field(s) in the table Orders. 
+SELECT orderdate,shipperid 
+FROM [Orders]
+12. Create a query that shows all the records only for the [OrderDetailID] field(s) in the table OrderDetails. 
+SELECT OrderDetailID 
+FROM [OrderDetails]
+13. Create a query that shows all the records only for the [ShipperName,Phone] field(s) in the table Shippers. 
+SELECT ShipperName,Phone 
+FROM [Shippers]
+14. Create a query that shows all the records only for the [LastName,FirstName] field(s) in the table Customer's. 
+SELECT customername 
+FROM [Customers]
+15. Create a query that shows all the records only for the [LastName,FirstName,Notes] field(s) in the table Employees. 
+SELECT LastName,FirstName,Notes 
+FROM [Employees]
+16. Create a query that shows all the records only for the [BirthDate] field(s) in the table Employees. 
+SELECT BirthDate
+FROM [Employees]
+17. Create a query that shows all the records only for the [EmployeeID,Photo] field(s) in the table Employees. 
+SELECT employeeid,photo 
+FROM [Employees]
+18. Create a query that shows all the records only for the [CategoryName,Description] field(s) in the table Categories. 
+SELECT CategoryName,Description 
+FROM [Categories]
+19. Create a query that shows all the records only for the [ProductID,ProductName] field(s) in the table Products. 
+SELECT ProductID,ProductName
+FROM [Products]
+20. Create a query that shows all the records only for the [SupplierID] field(s) in the table Products. 
+SELECT SupplierID
+FROM [Products]
+21. Create a query that shows all the records only for the [Unit,Price] field(s) in the table Products. 
+SELECT Unit,Price
+FROM [Products]
+22. Create a query that shows all the Unique records only for the [Country] field(s) in the table Customers
+SELECT DISTINCT Country 
+FROM [Customers] 
+23. Create a query that shows all the Unique records only for the [EmployeeID,CustomerID] field(s) in the table Orders. 
+SELECT DISTINCT EmployeeID,CustomerID
+FROM [Orders]
+24. How many tables are in the database? ?? 
+8
+25. What’s the name of the tables and how many records are in them. ?? 
+Customers	91
+Categories	8
+Employees	10
+OrderDetails	518
+Orders		196
+Products	77
+Shippers	3
+Suppliers	29
+26. Show me only the model and make of each car where the DriveTrain is All. 
+Select make, model
+FROM cars
+WHERE DriveTrain = 'ALL'
+
+- How many records were affected by the query you just 
+created? 
+460
+27. SSelect Origin, Type
+FROM cars
+WHERE Origin= 'USA'
+how me only the Country and Type of each car where the country is USA. 
+294
+- How many rows were affected by the query you just created? 
+735
